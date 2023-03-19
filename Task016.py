@@ -9,21 +9,22 @@
 input_list = []
 list_num = int(input("Введите количество элементов в массиве, N:  "))
 
-
 for i in range(list_num):
     input_list.append(int(input(f"Введите число: ")))
 print(input_list)
 
+find_x = int(input("Введите число, X:  "))
+
 count = 0
-start = time.pert_counter()
+# start = time.pert_counter()
 for i in range(list_num):
-    if input_list[i] == input_list[-list_num]:
+    if input_list[i] == find_x:
         count += 1
 print(count)
-end = time.pert_counter()
-print(end - start)
+# end = time.pert_counter()
+# print(end - start)
 
-start = time.pert_counter()
-print(input_list.count(input_list[-list_num]))
-end = time.pert_counter()
-print(end - start)
+# start = time.pert_counter()
+print(input_list.count(find_x))
+# end = time.pert_counter()
+# print(end - start)
